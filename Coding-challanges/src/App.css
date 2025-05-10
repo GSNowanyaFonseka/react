@@ -1,8 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: 1fr 1fr;    /* Two equal rows */
+  height: 100vh;                  /* Full viewport height */
+  width: 100vw;                   /* Full viewport width */
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 2px solid black;
+  background-color: lightgreen;
+}
 
 .button{
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 25%;
   text-align: center;
 }
 
@@ -10,5 +30,31 @@
   background-color: #b3e99e;
   border-radius: 10px;
   width: 80px;
-  height:50px
+  height:50px;
 }
+
+.add{
+  background-color: pink;
+  border-radius: 10px;
+  width: 80px;
+  height:50px;
+  margin: 10px;
+}
+
+.reset{
+  background-color: plum;
+  border-radius: 10px;
+  width: 80px;
+  height:50px;
+  margin: 10px;
+}
+
+.substract{
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 80px;
+  height:50px;
+  margin: 10px;
+}
+
+
