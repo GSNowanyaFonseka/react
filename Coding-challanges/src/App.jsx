@@ -21,6 +21,17 @@ function App(){
     updateCount(0);
   }
 
+  // section 3
+  const [desserts,addDessert] = useState([]);
+  const [isChecked, setChecked] = useState(false);
+  const dessertList = [];
+  const handler = () => {
+    if({isChecked} == true){
+      setChecked(true)
+      dessertList.push()
+    }
+  }
+
   return(
     <div className='page'>
       
@@ -38,9 +49,18 @@ function App(){
           <button className="reset" onClick={resetCount}>Reset</button>
         </div>
       </div>
+      
+      <div className='section'>
+        <p>Make your favourite desert recipie</p><br></br>
+        <div className="checkbox-group">
+          <label><input type="checkbox" value="Cherry Pie" checked={isChecked}/> Cherry Pie </label>
+          <label><input type="checkbox" value="Cannoli" checked={isChecked}/> Cannoli</label>
+          <label><input type="checkbox" value="Churros" checked={isChecked}/> Churros</label>
+          <label><input type="checkbox" value="Millefeuille" checked={isChecked}/> Millefeuille</label>
+          <label><input type="checkbox" value="Fraisier" checked={isChecked}/> Fraisier</label>
+        </div>
+      </div>
     </div>
-    
-    
   );
 }
 
